@@ -1,0 +1,49 @@
+{
+  "name": "ht-solo-bors",
+  "version": "1.0.0",
+  "private": false,
+  "description": "ht solo bors.",
+  "author": "",
+  "main": "dist/ht-solo-bors.common.js",
+  "unpkg": "dist/ht-solo-bors.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "bash ./src/worker/build.sh && vue-cli-service build --target lib --name ht-solo-bors ./src/main.ts",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//ht-solo-bors.git"
+  },
+  "files": [
+    "dist/*.js"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ht-solo-bors",
+    "Vue",
+    "Vue3",
+    "plugin"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.6.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "microbundle": "^0.13.3",
+    "typescript": "~3.9.3",
+    "vue": "^3.0.0-0"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0"
+  }
+}
